@@ -17,6 +17,16 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+# Grunt Files
+node_modules
+.sass-cache
+
+#Archive
+_OLD
+
+#Assets
+assets
+
 # =========================
 # Operating System Files
 # =========================

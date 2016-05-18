@@ -1,0 +1,41 @@
+nav {
+    flex-grow: 2;
+    
+    ul {
+        list-style: none;
+        padding: 0;
+        
+        li {
+            padding: 0 20px;
+            border-top: 1px solid #7bcbfb;
+            background: url(https://s3-eu-west-1.amazonaws.com/bppassets/public/assets/img/icons/CTA-ARROW-white.png) no-repeat right 20px center;
+            
+            &:last-child {
+                border-bottom: 1px solid #7bcbfb;
+            }
+                
+            &:hover {
+                background: #7bcbfb;
+                background: url(https://s3-eu-west-1.amazonaws.com/bppassets/public/assets/img/icons/CTA-ARROW-white.png) no-repeat right 20px center #7bcbfb;
+            }
+            
+            a {
+                display: block;
+                padding: 12px 30px 12px 0;
+                color: #fff;
+                font-weight: lighter;
+            
+                &:hover {
+                    text-decoration: none;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-grow: 1;
+    }
+}
