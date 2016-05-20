@@ -1,0 +1,10 @@
+.content {
+    width: 90%;
+    margin: 0 5%;
+}
+
+@media (max-width: 768px) {
+    .content {
+        margin-top: 53px;
+    }
+}

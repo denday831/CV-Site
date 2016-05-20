@@ -1,18 +1,23 @@
 .sidebar {
-    height: 100%;
+    height: initial;
     min-height: 100vh;
     box-sizing: border-box;
-    padding: 0 0 10px 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
     flex-basis: 350px;
     min-width: 350px;
     background-image: linear-gradient(to bottom, #5ac4f9, #228df8);
+    flex: 1 1 auto;
 }
 
 @media (max-width:768px) {
     .sidebar {
-        min-width: auto;
-        flex-shrink: 1;
+        min-width: 100%;
+        overflow-y: hidden;
+        min-height: initial;
+        flex-shrink: 0;
+        position: fixed;
+        height: 53px;
     }
 }

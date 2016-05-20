@@ -9,6 +9,10 @@ nav {
             padding: 0 20px;
             border-top: 1px solid #7bcbfb;
             background: url(https://s3-eu-west-1.amazonaws.com/bppassets/public/assets/img/icons/CTA-ARROW-white.png) no-repeat right 20px center;
+            -webkit-transition: background ease-out 500ms;
+            -moz-transition: background ease-out 500ms;
+            -o-transition: background ease-out 500ms;
+            transition: background ease-out 500ms;
             
             &:last-child {
                 border-bottom: 1px solid #7bcbfb;
@@ -31,11 +35,5 @@ nav {
                 }
             }
         }
-    }
-}
-
-@media (max-width: 768px) {
-    nav {
-        flex-grow: 1;
     }
 }
