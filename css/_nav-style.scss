@@ -7,7 +7,7 @@ nav {
         
         li {
             padding: 0 20px;
-            border-top: 1px solid #7bcbfb;
+            border-top: 1px solid #14505A;
             background: url(https://s3-eu-west-1.amazonaws.com/bppassets/public/assets/img/icons/CTA-ARROW-white.png) no-repeat right 20px center;
             -webkit-transition: background ease-out 500ms;
             -moz-transition: background ease-out 500ms;
@@ -15,12 +15,12 @@ nav {
             transition: background ease-out 500ms;
             
             &:last-child {
-                border-bottom: 1px solid #7bcbfb;
+                border-bottom: 1px solid #14505A;
             }
                 
             &:hover {
-                background: #7bcbfb;
-                background: url(https://s3-eu-west-1.amazonaws.com/bppassets/public/assets/img/icons/CTA-ARROW-white.png) no-repeat right 20px center #7bcbfb;
+                background: #14505A;
+                background: url(https://s3-eu-west-1.amazonaws.com/bppassets/public/assets/img/icons/CTA-ARROW-white.png) no-repeat right 20px center #14505A;
             }
             
             a {

@@ -1,7 +1,6 @@
 $(document).ready(function() {
     
     $("#nav-icon").click(function(){
-        var headHeight = $(".sidebar header").height();
        if ( $(this).hasClass("open") ) {
            $(this).removeClass("open");
            $("body").css("overflow", "auto");
@@ -18,14 +17,33 @@ $(document).ready(function() {
     });
 });
 
-$(window).resize(function() {
-    if ( $(window).width() >= 768 ) {
+$(document).ready(function() {
+    // run test on initial page load
+    checkSize();
+
+    // run test on resize of the window
+    $(window).resize(checkSize);
+});
+
+//Function to the css rule
+function checkSize(){
+    if ( $(".sidebar").innerHeight() > $(window).height() ) {
+            $(".sidebar").css({"height": "100%",
+                               "position": "absolute",
+                               "overflow-y": "hidden"
+            });
+            console.log("inner height")
+    }
+
+    if ($(".sidebar").css("min-width") == "330px" ){
+        
         $(".sidebar").css({"height": "100%",
                            "min-height": "100vh",
                            "overflow-y": "hidden"
-                          })
+                          });
+        $("body").css("overflow", "auto");   
     }
-    
+
     else {
        if ( $("#nav-icon").hasClass("open") ) {
            $(".sidebar").css({"height": "100%", "min-height": "100%"});
@@ -34,4 +52,4 @@ $(window).resize(function() {
            $(".sidebar").css({"height": "53px", "min-height": "0"});
        }
     }
-});
+}

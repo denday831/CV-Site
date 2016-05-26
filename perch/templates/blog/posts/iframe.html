@@ -1,0 +1,16 @@
+<header class="col-sm-12">
+  <h1><perch:blog id="postTitle" type="text" label="Title" required="true" size="xl autowidth" order="1" /></h1>
+  <p><perch:blog id="date" type="textarea" label="Project Date" markdown="true" order="2" size="s" /></p>
+</header>
+
+<div class="main-content row col-sm-12">
+    <div class="description col-lg-4 col-md-10">
+        <perch:blog id="postDescHTML" type="textarea" label="Post" order="2" editor="markitup" markdown="true" size="xxl autowidth" required="true" />
+    </div>
+
+    <div class="col-lg-7 col-lg-offset-1 col-md-12">
+        <perch:blog id="iframe" type="textarea" label="iFrame" markdown="true" html="true" order="3" size="s" />
+    </div>
+</div>
+
+<perch:blog id="thumb-img" type="image" label="Thumbnail Image" order="4" suppress="true" />

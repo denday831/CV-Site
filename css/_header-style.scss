@@ -1,31 +1,42 @@
-.sidebar header {
-    padding: 0 40px;
+.sidebar header, {
+    padding: 0 20px;
     color: #fff;
     
     h2 {
         font-size: 36px;
+        
+        a {
+            color: #fff;
+            
+            &:hover {
+                text-decoration: none;
+            }
+        }
     }
     
     h3 {
-        font-size: 15px;
-        margin-top: 12px;
+        font-size: 13px;
+        margin-top: 0px;
+        margin-bottom: 20px;
+        display: inline-block;
     }
 }
 
 @media (max-width: 768px) {
     .sidebar header {
         text-align: center;
+        padding: 0 40px;
         
         h2 {
-            margin-top: 0;
-            font-size: 26px;
+            margin-top: 3px;
+            font-size: 24px;
             margin-bottom: 5px;
         }
         
         h3 {
             margin-top: 0px;
-            font-size: 14px;
-            margin-bottom: 5px;
+            font-size: 12px;
+            margin-bottom: 15px;
         }
     }
 }

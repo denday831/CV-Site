@@ -1,0 +1,18 @@
+<header class="col-sm-12">
+  <h1><perch:blog id="postTitle" type="text" label="Project Title" required="true" size="xl autowidth" order="1" /></h1>
+  <p><perch:blog id="date" type="textarea" label="Project Date" markdown="true" order="2" size="s" /></p>
+</header>
+
+<div class="main-content row col-sm-12">
+    <div class="description col-lg-8 col-md-10">
+        <perch:blog id="postDescHTML" type="textarea" label="Post" order="2" editor="markitup" markdown="true" size="xxl autowidth" required="true" />
+    </div>
+    
+    <div class="img-grid vertical">
+    <perch:repeater id="images" label="Images">
+        <img src="<perch:blog id="image" type="image" label="Image" order="3" />" alt="<perch:blog id="postTitle" />" />
+     </perch:repeater>
+    </div>
+</div>
+
+<perch:blog id="thumb-img" type="image" label="Thumbnail Image" order="4" suppress="true" />

@@ -6,10 +6,12 @@ footer {
     a {
         color: #fff;
         font-weight: lighter;
-        text-decoration: underline;
+        text-decoration: none;
+        border-bottom: 1px solid #fff;
         
         &:hover {
             color: #ccc;
+            text-decoration: none;
         }
     }
 }

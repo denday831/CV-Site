@@ -5,10 +5,12 @@
     padding: 0;
     display: flex;
     flex-direction: column;
-    flex-basis: 350px;
-    min-width: 350px;
-    background-image: linear-gradient(to bottom, #5ac4f9, #228df8);
+    width: 330px;
+    min-width: 330px;
+    background: #1c6370;
     flex: 1 1 auto;
+    z-index: 9999;
+    position: fixed;
 }
 
 @media (max-width:768px) {
@@ -17,7 +19,6 @@
         overflow-y: hidden;
         min-height: initial;
         flex-shrink: 0;
-        position: fixed;
         height: 53px;
     }
 }

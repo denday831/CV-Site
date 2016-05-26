@@ -1,0 +1,17 @@
+.col-md-3.post-listing, .col-sm-5.post-listing {
+    border: 1px solid #4a4a4a;
+    margin: 20px;
+    box-sizing: border-box;
+    padding: 0;
+    
+    img {
+        width: 100%;
+    }
+    
+    h2 a {
+        font-size: 26px;
+        color: #4a4a4a;
+        margin: 15px;
+        display: block;
+    }
+}
