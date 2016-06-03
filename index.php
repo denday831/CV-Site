@@ -6,13 +6,13 @@
     <title>Portfolio Template | Matthew Denny</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,400italic,700,700italic|Quicksand:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="../build/css/style.min.css">
+    <link rel="stylesheet" type="text/css" href="build/css/style.min.css">
         <!--[if lt IE 9]>
           <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
           <link rel="stylesheet" type="text/css" href="build/css/ie8.css">
         <![endif]-->
   </head>
-  <body>
+  <body class="home" style="background:url(<?php perch_content('Background Image'); ?>) no-repeat; background-size:cover;">
       <section class="sidebar">
           <div id="nav-icon">
               <span></span>
@@ -27,7 +27,7 @@
           <nav>
             <?php  
             perch_blog_custom(array(
-                            'template' => 'posts_navigation.html'
+                            'template' => 'home_posts_navigation.html'
                         ));
             ?>   
           </nav>
@@ -38,17 +38,9 @@
       </section>
       
       
-      <section class="content">          
-          <div class="main-content">        
-              <div class="col-sm-12">
-                <?php  
-                perch_blog_custom(array(
-                                'template' => 'posts_home.html'
-                            ));
-                ?>   
-              </div>
-          </div>
+      <section class="content">
+                <?php perch_content('Home - Current Job'); ?>
       </section><!-- content close -->
   </body>
-  <script type="text/javascript" src="../build/js/script.min.js"></script>
+  <script type="text/javascript" src="build/js/script.min.js"></script>
 </html>

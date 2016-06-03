@@ -2,11 +2,12 @@
     padding: 0 20px;
     color: #fff;
     
-    h2 {
+    h1, h2 {
         font-size: 36px;
         
         a {
             color: #fff;
+            border-bottom: 0;
             
             &:hover {
                 text-decoration: none;
@@ -27,7 +28,7 @@
         text-align: center;
         padding: 0 40px;
         
-        h2 {
+        h1, h2 {
             margin-top: 3px;
             font-size: 24px;
             margin-bottom: 5px;

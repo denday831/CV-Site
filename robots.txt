@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /
+Disallow: /_OLD/
+Disallow: /china/
+Disallow: /perch/

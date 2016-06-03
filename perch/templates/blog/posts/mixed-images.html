@@ -1,5 +1,5 @@
 <header class="col-sm-12">
-  <h1><perch:blog id="postTitle" type="text" label="Project Title" required="true" size="xl autowidth" order="1" /></h1>
+  <h1><perch:blog id="postTitle" type="text" label="Title" required="true" size="xl autowidth" order="1" /></h1>
   <p><perch:blog id="date" type="text" label="Project Date" markdown="true" order="2" size="xl autowidth" /></p>
 </header>
 
@@ -22,8 +22,14 @@
         </perch:if>
     </div>
     
+    <div class="img-grid">
+    <perch:repeater id="images" label="Horizonal Images" order="6">
+        <img src="<perch:blog id="image" type="image" label="Image" />" alt="<perch:blog id="postTitle" />" />
+     </perch:repeater>
+    </div>
+    
     <div class="img-grid vertical">
-    <perch:repeater id="images" label="Images">
+    <perch:repeater id="images-vert" label="Vertical Images">
         <img src="<perch:blog id="image" type="image" label="Image" order="6" />" alt="<perch:blog id="postTitle" />" />
      </perch:repeater>
     </div>

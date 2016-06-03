@@ -1,10 +1,10 @@
 <perch:before> 
 </perch:before>
-    <div class="col-md-3 col-md-offset-1 col-sm-5 post-listing">  
-        	<img src="<perch:blog id="thumb-img" type="image" crop="false" />" alt="<perch:blog id="postTitle" />" />
-        <h2>
-        	<a href="<perch:blog id="postURL" />" rel="bookmark" class="entry-title"><perch:blog id="postTitle" /></a>
-        </h2>
+    <div class="post-listing">
+        <a href="<perch:blog id="postURL" />" rel="bookmark" class="entry-title">  
+            <img src="<perch:blog id="thumb-img" type="image" crop="true" width="280" height="170" />" alt="<perch:blog id="postTitle" />" />
+            <h2><perch:blog id="postTitle" /></h2>
+        </a>
     </div>
 <perch:after>
 </perch:after>

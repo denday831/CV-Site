@@ -39,13 +39,10 @@
       
       
       <section class="content">          
-          <div class="main-content">        
-              <div class="col-sm-12">
-                <?php  
-                perch_blog_custom(array(
-                                'template' => 'posts_home.html'
-                            ));
-                ?>   
+          <div class="main-content row col-sm-12">        
+              <div class="col-sm-8">
+                <h1>: &nbsp; ^)<br />Page not found</h1>
+                <p>It looks like the page you're looking for has been moved or deleted. The best we can offer is one of the links on the left hand side of this page. Alternatively if you really can't find what you're looking for then contact me to see if I can help.</p>  
               </div>
           </div>
       </section><!-- content close -->

@@ -1,0 +1,45 @@
+.cards {
+  width: 100%;
+  margin: 0 0 40px 0;
+  
+  .card {
+	  width: 30%;
+	  margin: 0;
+      padding: 7px 7px 0 0;
+      box-sizing: border-box;
+	  
+	  img {
+		  width: 100%;
+          height: auto;
+		}
+	}
+}
+
+@media(max-width: 1024px) {
+    .cards {
+        
+        .card {
+            width: 45%;
+        }
+    }
+}
+
+@media(max-width: 875px) {
+    .cards {
+        
+        .card {
+            width: 90%;
+        }
+    }
+}
+
+@media(max-width: 640px) {
+    .cards {
+        
+        .card {
+            width: 90%;
+        }
+    }
+}
+
+

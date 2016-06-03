@@ -53,3 +53,19 @@ function checkSize(){
        }
     }
 }
+
+
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+// MASONARY GRID INSTALLER
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+// layout Masonry after each image loads
+$('.cards').imagesLoaded().progress( function() {
+    $('.cards').masonry({
+      itemSelector: '.card'
+    });
+  $('.cards').masonry('layout');
+}); 

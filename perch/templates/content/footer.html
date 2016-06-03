@@ -1,3 +1,9 @@
+<perch:if exists="cv-upload">
+    <p>
+        <a href="<perch:content id="cv-upload" type="file" label="Upload CV" />">Download CV</a>
+    </p>
+</perch:if>
+
 <perch:repeater id="footer-link" label="Footer Links" order="1">
         <p>
         	<a href="<perch:content id="link-address" type="text" label="Link Address" />" alt="<perch:content id="link-text" label="Link Text" />">

@@ -10,8 +10,16 @@ footer {
         border-bottom: 1px solid #fff;
         
         &:hover {
-            color: #ccc;
+            color: #fff;
             text-decoration: none;
+            border-bottom: 0;
         }
+    }
+    
+    a, a:hover {
+        -webkit-transition: border-bottom ease-out 250ms;
+        -moz-transition: border-bottom ease-out 250ms;
+        -o-transition: border-bottom ease-out 250ms;
+        transition: border-bottom ease-out 250ms;
     }
 }
